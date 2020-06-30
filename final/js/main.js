@@ -166,9 +166,6 @@ $(() => {
         $(".introduction-modal-cover").show();
     })
 
-
-
-
     /*撿星星*/
     /*按鈕出現、抽屜打開*/
     $(".star").hide();
@@ -231,7 +228,7 @@ $(() => {
         $(".introduction-modal.fourth").hide();
         $(".introduction-modal-cover-dark-version").hide();
         $(".countdown").show();
-        var time = 10000; //倒數7min
+        var time = 300000; //倒數5min
         var spentTime = 0;
         ! function MyCounter() {
             if (time <= 0) {
