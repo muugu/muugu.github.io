@@ -1,0 +1,21 @@
+body {
+    background-image: url(../img/success.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.container {
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    max-width: none;
+}
+
+/* footer*/
+footer.footer.navbar-fixed-bottom {
+    background-color: #342b38;
+    color: white;
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>逃出圖書館</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- 引用自已定義的CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="fade-in">
+    <div class="container">
+        <div class="special-item-wrapper">
+            <button class="special-item light-bottom"></button>
+            <button class="special-item poster"></button>
+            <button class="special-item door"></button>
+            <button class="special-item door-open" onclick="document.location='./success.html'"></button>
+            <button class="special-item spe-col"></button>
+            <button class="special-item return"></button>
+            <button class="special-item borrow"></button>
+            <button class="special-item computer"></button>
+            <button class="special-item star star-computer"></button>
+            <button class="special-item computer-dark"></button>
+            <button class="special-item hidebutton"></button>
+            <button class="special-item reference-desk-hide"></button>
+            <button class="special-item star star-desk"></button>
+            <button class="special-item reference-desk"></button>
+            <button class="special-item doc"></button>
+            <button class="special-item gazetteer"></button>
+            <button class="special-item star star-journal"></button>
+            <button class="special-item book1"></button>
+            <button class="special-item star star-reference"></button>
+            <button class="special-item book2"></button>
+            <button class="special-item star star-borrow"></button>
+            <button class="special-item book3"></button>
+            <button class="special-item book4"></button>
+            <button class="special-item star star-return"></button>
+            <button class="special-item star star-map"></button>
+            <button class="special-item maps"></button>
+            <button class="special-item star star-light"></button>
+            <button class="special-item star star-window"></button>
+            <button class="special-item star star-shelf"></button>
+            <button class="special-item star star-wall"></button>
+            <button class="special-item green-button"></button>
+            <button class="special-item red-button"></button>
+            <button class="special-item LCC"></button>
+            <button class="special-item drawer"></button>
+            <button class="special-item opendrawer"></button>
+            <button class="special-item note"></button>
+        </div>
+        <!--燈泡-->
+        <div class="bulb-wrapper">
+            <button class="bulb bulb1"></button>
+            <button class="bulb bulb2"></button>
+            <button class="bulb bulb3"></button>
+            <button class="bulb bulb4"></button>
+            <button class="bulb bulb5"></button>
+            <button class="bulb bulb6"></button>
+            <button class="bulb bulb7"></button>
+            <button class="bulb bulb8"></button>
+            <button class="bulb bulb9"></button>
+            <button class="bulb bulb10"></button>
+            <button class="bulb bulb11"></button>
+            <button class="bulb bulb12"></button>
+        </div>
+
+        <!--故事介紹modal-->
+        <div class="introduction-modal-cover">
+        </div>
+        <div class="introduction-modal first">
+            <div class="img-wrapper study">
+            </div>
+            <div class="text-wrapper">
+                <p>期末考前的夜晚，你一如往常的在圖書館自習...</p>
+            </div>
+            <button class="direction-arrow 1"></button>
+        </div>
+
+        <div class="introduction-modal-cover-dark-version"></div>
+        <div class="introduction-modal second">
+            <div class="img-wrapper surprise"></div>
+            <div class="text-wrapper">
+                <p>你：...發生了什麼事，為什麼圖書館的燈全暗了!!!<br></p>
+            </div>
+            <button class="direction-arrow 2"></button>
+        </div>
+
+        <div class="introduction-modal third">
+            <div class="img-wrapper lock"></div>
+            <div class="text-wrapper">
+                <p>原來你讀書讀到渾然忘我，以致於忘記閉館時間，<br>而圖書館員臨走前也沒有發現認真讀書的你...<br>所以你被鎖在圖書館裡面了!!</p>
+            </div>
+            <button class="direction-arrow 3"></button>
+        </div>
+
+        <div class="introduction-modal fourth">
+            <div class="img-wrapper lock"></div>
+            <div class="text-wrapper">
+                <p>圖書館要明天早上九點才會再度開放，<br>但你明天有早八的期末考阿QQ<br>只有在期限內找到圖書館員設立的出口密碼，<br>你才可以即時參加明天的考試!<br><br>現在就趕快打開燈，開始尋找吧!
+                </p>
+            </div>
+            <button class="btn btn-outline-warning">開燈</button>
+        </div>
+
+        <!--圖書館介紹 modal-->
+        <div class="introduction-modal gazetteer">
+            <button class="close"></button>
+            <div class="img-wrapper gazetteer"></div>
+            <div class="gazetteer text-wrapper">
+                <p class="title">待編目<br></p>
+                <p class="content">■ 記述編目(描述資料形式)→<br>■ 主題分析(展現資料內容)→<br>■ build Call Number→<br>□ 輸入電腦(Marc21格式)</p>
+            </div>
+        </div>
+
+        <div class="introduction-modal reference-desk">
+            <button class="close"></button>
+            <div class="img-wrapper Reference"></div>
+            <div class="text-wrapper">
+                <p class="second-title">參考服務台<br></p>
+                <p class="content">參考服務櫃檯可協助讀者有效利用圖書館資源、尋找資料以滿足讀者的資訊需求，和負責借還書的流通櫃台是不一樣的。
+                    而儘管多數人只知道向參考服務櫃台問廁所在哪裡，但其實它可以受理更多專業、學術性的問題!
+                    <br><br>像是寫論文時總覺得文獻回顧不完整、找不到核心文獻、不知如何有效檢索資料庫時...都可以向參考服務台尋求協助；
+                    對許多教授而言，除了做研究時會求助於圖書館的參考服務，也常會透過請求參考館員幫助，以理解自己研究成果的學術影響力。</p>
+            </div>
+        </div>
+
+        <div class="introduction-modal reference-book">
+            <button class="close"></button>
+            <div class="img-wrapper reference-book"></div>
+            <div class="text-wrapper">
+                <p class="second-title">參考工具書</p>
+                <p class="content">又稱參考書，包括百科全書、字辭典、統計資料、年鑑...等，此類型的圖書的功用為「查考」而非「閱讀」，所以圖書館通常不會提供外借
+                    ~若分不清楚一般圖書與參考書的差別，參考書有特殊符號'R'，可以從索書號進行辨識。</p>
+            </div>
+        </div>
+
+        <div class="introduction-modal journal">
+            <button class="close"></button>
+            <div class="img-wrapper journal"></div>
+            <div class="text-wrapper">
+                <p class="second-title">紙本期刊區</p>
+                <p class="content">紙本期刊具有特殊符號'P'，代表具有連續性的出版品。通常圖書的排列方式是以分類號的順序進行排序，但期刊區是按照卷期順序排列~</p>
+            </div>
+        </div>
+
+        <div class="introduction-modal borrow">
+            <button class="close"></button>
+            <div class="img-wrapper borrow"></div>
+            <div class="text-wrapper">
+                <p class="second-title">RFID自助借書機</p>
+                <p class="content">
+                    透過無線射頻技術，可以一次讀取多本書並進行借閱。<br><br>多數人以為圖書館員的工作就是借書跟還書，其實完全不是如此啦...借還書工作不過是圖書館服務的一小部分，目前多交由志工、工讀生或自動化設備來處理。
+                </p>
+            </div>
+        </div>
+
+        <div class="introduction-modal return">
+            <button class="close"></button>
+            <div class="img-wrapper return"></div>
+            <div class="img-wrapper return-book">
+                <button class="special-item return-book"></button>
+            </div>
+            <div class="text-wrapper">
+                <p class="second-title">歸架書車</p>
+                <p class="content">供讀者放置使用完的資料，後續由工作人員負責歸架。<br>雖然許多讀者習慣自行歸架，但很容易因此上錯架而造成其他讀者找不到資料!
+                    如果找書時，館藏明明顯示在架，卻怎麼找都找不到...很可能就是有人上錯架啦!有些書甚至因此永遠找不到了呢ಥ_ಥ
+                    <br><br>所以用完資料還是放到歸架書車吧，幫自己也幫工作人員省時省力~
+                </p>
+            </div>
+        </div>
+
+        <div class="introduction-modal computer">
+            <button class="close"></button>
+            <div class="img-wrapper computer"></div>
+            <div class="text-wrapper">
+                <p class="second-title">電子資源</p>
+                <p class="content">圖書館具有眾多的電子資源，可分為免費、開放取用(Open Acess)的公開資源或商業電子資料庫。其中商業電子資料庫多只能"租用"而不能"擁有"，
+                    且租金是難以想像的天價，但大學圖書館為了讀者的研究、學習需求，就算心在淌血還是要持續訂購。以下提供常見的跨領域資料庫，不論是做研究、還是想要在報告中加幾筆高品質的參考文獻，都是很好的查詢管道：<br>
+                    <a class="link" href="http://www.airitilibrary.com/" target="_blank">Airiti Library華藝線上圖書館</a>
+                    :收錄跨領域中文期刊文章<br>
+                    <a class="link"
+                        href="http://apps.webofknowledge.com/WOS_GeneralSearch_input.do?product=WOS&search_mode=GeneralSearch&SID=D4LHxUCbpQuphgU16a6&preferencesSaved=&editions=SCI&editions=SSCI&editions=AHCI"
+                        target="_blank">Web of Science:</a>
+                    收錄跨領域英文期刊文章的引文資料庫<br>
+                    <a class="link"
+                        href="https://ntu.primo.exlibrisgroup.com/discovery/dbsearch?vid=886NTU_INST:886NTU_INST&lang=zh-tw"
+                        target="_blank">▲台大資料庫系統</a>:可檢索台大圖書館購買的各種資料庫
+                </p>
+            </div>
+        </div>
+
+        <div class="introduction-modal maps">
+            <button class="close"></button>
+            <div class="img-wrapper maps"></div>
+            <div class="text-wrapper">
+                <p class="second-title">輿圖區</p>
+                <p class="content">陳列各種型式地圖資料，包括捲軸與單張地圖。地圖資料的型態特別，因此會設有特殊書架來裝載。</p>
+            </div>
+        </div>
+
+        <div class="introduction-modal spe-col">
+            <button class="close"></button>
+            <div class="img-wrapper spe-col"></div>
+            <div class="img-wrapper star-specol">
+                <button class="special-item star star-specol"></button>
+            </div>
+            <div class="text-wrapper">
+                <p class="second-title">特藏資料區</p>
+                <p class="content">特色館藏有別於一般館藏，具有獨特性、稀少性(像是手稿、地方文獻、歷史檔案等)，因而被圖書館特別加以蒐藏與管理，成為每間圖書館獨特的的館藏。
+                </p>
+            </div>
+        </div>
+
+        <div class="introduction-modal poster">
+            <button class="close"></button>
+            <div class="img-wrapper poster"></div>
+        </div>
+
+        <!--抽屜裡的note提示-->
+        <div class="introduction-modal note">
+            <button class="close"></button>
+            <div class="img-wrapper Note"></div>
+            <div class="text-wrapper">
+                <p class="second-title">提示 :</p>
+                <p class="content">只要蒐集到12顆星星，即可打開圖書館大門!</p>
+            </div>
+        </div>
+
+
+
+        <!--倒數-->
+        <div class="countdown">
+        </div>
+
+        <div class="starCollect"></div>
+    </div>
+
+    </div>
+    </div>
+    <footer class="footer navbar-fixed-bottom">
+        <div class="text-center">
+            copyright &copy; 2020 by Mugu
+        </div>
+    </footer>
+
+
+
+    <!--bootstrap js-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!--自己寫的js-->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

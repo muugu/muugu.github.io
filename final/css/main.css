@@ -1,0 +1,814 @@
+/*網頁fade in*/
+.fade-in {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*fade-in end*/
+
+/*introduction modal*/
+.introduction-modal-cover {
+    background-color: #000000;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0vh;
+    opacity: 0.4;
+    animation-name: fly-in2;
+    animation-duration: 1s;
+}
+
+.introduction-modal {
+    background-color: #FFFFFF;
+    height: auto;
+    width: 35vw;
+    position: absolute;
+    top: 10vh;
+    left: 35vw;
+    border-radius: 20px;
+    padding: 2vh;
+    animation-name: fly-in1;
+    animation-duration: 1s;
+}
+
+.introduction-modal-cover-dark-version {
+    background-color: #000000;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0vh;
+    opacity: 0.85;
+    animation-name: fly-in3;
+    animation-duration: 2s;
+}
+
+.close {
+    height: 6.5vh;
+    width: 3vw;
+    background-image: url(../img/close.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.text-wrapper {
+    width: 100%;
+    height: auto;
+}
+
+.img-wrapper {
+    height: 25vh;
+    width: 20vw;
+    margin-left: 7vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.img-wrapper.study {
+    background-image: url(../img/study.png);
+}
+
+.img-wrapper.surprise {
+    background-image: url(../img/surprise.png);
+}
+
+.img-wrapper.lock {
+    background-image: url(../img/lock.png);
+}
+
+.text-wrapper {
+    width: 100%;
+    height: auto;
+    margin-top: 2vh;
+}
+
+.direction-arrow {
+    height: 5vh;
+    width: 3vw;
+    margin-top: 2vh;
+    margin-left: 48%;
+    background-image: url(../img/directionArrow.png);
+    background-size: cover;
+    border: none;
+}
+
+button:focus {
+    outline: none;
+    /* outline: 1px dotted; */
+    /* outline: 5px auto -webkit-focus-ring-color; */
+}
+
+p {
+    font-weight: 600;
+    font-family: 微軟正黑體;
+    text-align: center;
+    margin-bottom: 0vh;
+}
+
+button.btn.btn-outline-warning {
+    border-radius: 10px;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-left: 41%;
+    margin-top: 5vh;
+}
+
+
+
+@keyframes fly-in1 {
+    from {
+        opacity: 0;
+        position: absolute;
+        top: 0vh;
+    }
+
+    to {
+        opacity: 1;
+        position: absolute;
+        top: 10vh;
+    }
+}
+
+@keyframes fly-in2 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.4;
+    }
+}
+
+@keyframes fly-in3 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.8;
+    }
+}
+
+/*introduction modal end*/
+
+/*倒數*/
+.countdown {
+    width: 15vw;
+    height: 8vh;
+    position: absolute;
+    top: 1vh;
+    left: 83vw;
+    padding: 2vh;
+    background-color: white;
+    border-radius: 5vh;
+    opacity: 0.9;
+    font-family: monospace;
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+/*算星星數*/
+.starCollect {
+    width: 10vw;
+    height: 8vh;
+    position: absolute;
+    top: 88vh;
+    left: 1vw;
+    padding: 2vh;
+    background-color: #ffffff;
+    border-radius: 5vh;
+    opacity: 0.8;
+    font-family: monospace;
+    font-size: large;
+    font-weight: bolder;
+}
+
+/*算星星數end*/
+
+/*燈泡閃*/
+@keyframes pulse {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1)
+    }
+
+    90% {
+        transform: scale(1.2)
+    }
+
+    to {
+        transform: scale(.95)
+    }
+}
+
+/*燈泡閃end*/
+button.btn.btn-outline-light {
+    border-radius: 10px;
+    font-family: 微軟正黑體;
+    font-size: x-large;
+    font-weight: bolder;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-left: 47vw;
+    margin-top: 80vh;
+}
+
+
+.container {
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    max-width: none;
+    padding: 0;
+}
+
+/*燈泡*/
+.bulb {
+    background-position: center;
+    background-size: cover;
+    border: 0px;
+    background-color: transparent;
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    animation-name: pulse;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+.bulb.bulb1 {
+    background-image: url(../img/bulb1.png);
+    top: 1.3vh;
+    left: 47vw;
+}
+
+.bulb.bulb2 {
+    background-image: url(../img/bulb2.png);
+    top: -1vh;
+    left: 48.8vw;
+    height: 35px;
+    width: 35px;
+}
+
+.bulb.bulb3 {
+    background-image: url(../img/bulb3.png);
+    top: -1vh;
+    left: 52vw;
+}
+
+.bulb.bulb4 {
+    background-image: url(../img/bulb4.png);
+    top: -1.3vh;
+    left: 54vw;
+}
+
+.bulb.bulb5 {
+    background-image: url(../img/bulb5.png);
+    top: -0.7vh;
+    left: 56.3vw;
+}
+
+.bulb.bulb6 {
+    background-image: url(../img/bulb6.png);
+    top: 0.3vh;
+    left: 59vw;
+}
+
+.bulb.bulb7 {
+    background-image: url(../img/bulb7.png);
+    top: 3.5vh;
+    left: 61vw;
+}
+
+.bulb.bulb8 {
+    background-image: url(../img/bulb8.png);
+    top: 5.3vh;
+    left: 59vw;
+}
+
+.bulb.bulb9 {
+    background-image: url(../img/bulb9.png);
+    top: 7.1vh;
+    left: 56.5vw;
+}
+
+.bulb.bulb10 {
+    background-image: url(../img/bulb10.png);
+    top: 7.6vh;
+    left: 52.2vw;
+}
+
+.bulb.bulb11 {
+    background-image: url(../img/bulb11.png);
+    top: 5.6vh;
+    left: 49.8vw;
+}
+
+.bulb.bulb12 {
+    background-image: url(../img/bulb12.png);
+    top: 5vh;
+    left: 48.5vw;
+}
+
+/*圖書館介紹modal*/
+.img-wrapper.gazetteer {
+    background-image: url(../img/gazetteer-modal.png);
+}
+
+.gazetteer.text-wrapper {
+    background-color: #ffcd3c;
+    padding: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 5px;
+    width: 70%;
+}
+
+.img-wrapper.spe-col {
+    background-image: url(../img/speCol.png);
+}
+
+.img-wrapper.reference-book {
+    background-image: url(../img/referenceBook.png);
+}
+
+.img-wrapper.Reference {
+    background-image: url(../img/referenceDesk.png);
+}
+
+.img-wrapper.journal {
+    background-image: url(../img/journal.png);
+}
+
+.img-wrapper.star-specol {
+    position: absolute;
+    top: 0vh;
+}
+
+.img-wrapper.return {
+    background-image: url(../img/returnCar.png);
+}
+
+.img-wrapper.return-book {
+    position: absolute;
+    top: 0vh;
+}
+
+.img-wrapper.borrow {
+    background-image: url(../img/RFID.png);
+}
+
+.img-wrapper.computer {
+    background-image: url(../img/computer-screen.png);
+}
+
+.img-wrapper.maps {
+    background-image: url(../img/map.png);
+}
+
+.img-wrapper.poster {
+    background-image: url(../img/call-number.png);
+    height: 80vh;
+    width: 23vw;
+    background-size: cover;
+    margin-left: 5.5vw;
+}
+
+
+
+p.title {
+    font-size: x-large;
+    text-align: left;
+    font-weight: bolder;
+}
+
+p.content {
+    text-align: left;
+    margin-top: 2vh;
+    border-color: black;
+    border-style: dashed;
+    border-left: none;
+    border-right: none;
+    padding: 3%;
+    margin-bottom: 4%;
+}
+
+/*special item的按鈕*/
+.special-item-wrapper {
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/main.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.special-item {
+    background-position: center;
+    background-size: cover;
+    border: 0px;
+    background-color: transparent;
+}
+
+.special-item.light-bottom {
+    background-image: url(../img/light-bottom.png);
+    height: 34px;
+    width: 26px;
+    position: absolute;
+    top: 8vh;
+    left: 54.2vw;
+}
+
+.special-item.poster {
+    background-image: url(../img/poster.png);
+    width: 45px;
+    height: 15vh;
+    position: absolute;
+    top: 27vh;
+    left: 34.6vw;
+}
+
+.special-item.door {
+    width: 87px;
+    height: 111px;
+    background-image: url(../img/door.png);
+    position: absolute;
+    top: 27vh;
+    left: 52vw;
+}
+
+.special-item.door-open {
+    width: 87px;
+    height: 111px;
+    position: absolute;
+    top: 27vh;
+    left: 52vw;
+}
+
+.special-item.spe-col {
+    background-image: url(../img/spe-col.png);
+    width: 350px;
+    height: 108px;
+    position: absolute;
+    top: 49.3vh;
+    left: 42.5vw;
+}
+
+.special-item.return {
+    background-image: url(../img/return.png);
+    position: absolute;
+    width: 40px;
+    height: 101px;
+    top: 44.3vh;
+    left: 66.23vw;
+}
+
+.special-item.return-book {
+    background-image: url(../img/return-book.png);
+    height: 25vh;
+    width: 14vw;
+    position: absolute;
+    top: 2.1vh;
+    left: 3vw;
+}
+
+.special-item.borrow {
+    background-image: url(../img/borrow.png);
+    width: 90px;
+    height: 30px;
+    position: absolute;
+    top: 40vh;
+    left: 46vw;
+}
+
+.special-item.computer {
+    background-image: url(../img/computer.png);
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    top: 69.8vh;
+    left: 82vw;
+}
+
+.special-item.doc {
+    background-image: url(../img/doc.png);
+    width: 180px;
+    height: 69px;
+    position: absolute;
+    top: 71vh;
+    left: 73vw;
+}
+
+.special-item.hidebutton {
+    background-image: url(../img/hidebutton.png);
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 72vh;
+    left: 75vw;
+}
+
+.special-item.reference-desk-hide {
+    background-image: url(../img/reference-desk-hide.png);
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    top: 67vh;
+    left: 68vw;
+}
+
+.special-item.reference-desk {
+    background-image: url(../img/reference-desk.png);
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    top: 67vh;
+    left: 68vw;
+}
+
+.special-item.gazetteer {
+    background-image: url(../img/gazetteer.png);
+    height: 80px;
+    width: 109px;
+    position: absolute;
+    top: 71vh;
+    left: 53vw;
+}
+
+.special-item.book1 {
+    background-image: url(../img/book1.png);
+    width: 18px;
+    height: 30px;
+    position: absolute;
+    top: 45vh;
+    left: 29.5vw;
+}
+
+.special-item.book2 {
+    background-image: url(../img/book2.png);
+    height: 110px;
+    width: 80px;
+    position: absolute;
+    left: 3.5vw;
+    top: -1vh;
+}
+
+.special-item.maps {
+    background-image: url(../img/maps.png);
+    height: 70px;
+    width: 65px;
+    position: absolute;
+    top: 23vh;
+    left: 90vw;
+}
+
+.special-item.star-computer {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 85vh;
+    left: 91vw;
+    background-image: url(../img/star-computer.png);
+}
+
+.special-item.computer-dark {
+    height: 103px;
+    width: 83px;
+    position: absolute;
+    top: 74.6vh;
+    left: 88.3vw;
+    background-image: url(../img/computer-dark.png);
+    background-repeat: no-repeat;
+}
+
+.special-item.star-desk {
+    background-image: url(../img/star-desk.png);
+    height: 20px;
+    width: 32px;
+    position: absolute;
+    top: 70vh;
+    left: 69.5vw;
+}
+
+.special-item.star-journal {
+    background-image: url(../img/star-journal.png);
+    background-size: contain;
+    height: 24px;
+    width: 0.5px;
+    position: absolute;
+    top: 46vh;
+    left: 29.7vw;
+}
+
+.special-item.star-reference {
+    background-image: url(../img/star-reference.png);
+    height: 35px;
+    width: 30px;
+    position: absolute;
+    top: 7vh;
+    left: 4vw;
+}
+
+.special-item.star-borrow {
+    background-image: url(../img/star-borrow.png);
+    height: 25px;
+    width: 10px;
+    position: absolute;
+    top: 71vh;
+    left: 4.2vw;
+}
+
+.special-item.book3 {
+    background-image: url(../img/book3.png);
+    height: 69px;
+    width: 45px;
+    position: absolute;
+    top: 65.8vh;
+    left: 3.6vw;
+}
+
+.special-item.book4 {
+    background-image: url(../img/book4.png);
+    height: 100px;
+    width: 120px;
+    position: absolute;
+    top: 23.9vh;
+}
+
+.special-item.star-return {
+    background-image: url(../img/star-return.png);
+    height: 22px;
+    width: 20px;
+    position: absolute;
+    top: 25vh;
+    left: 2.6vw;
+}
+
+.special-item.star-map {
+    background-image: url(../img/star-map.png);
+    height: 26px;
+    width: 24px;
+    position: absolute;
+    top: 23.5vh;
+    left: 91.5vw;
+}
+
+.special-item.star-light {
+    background-image: url(../img/star-light.png);
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 14vh;
+    left: 54.7vw;
+}
+
+.special-item.star-window {
+    background-image: url(../img/star-window.png);
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 9.5vh;
+    left: 50vw;
+}
+
+.special-item.star-shelf {
+    background-image: url(../img/star-shelf.png);
+    height: 10px;
+    width: 20px;
+    position: absolute;
+    top: 71.8vh;
+    left: 30vw;
+}
+
+.special-item.star-wall {
+    background-image: url(../img/star-wall.png);
+    height: 13px;
+    width: 10px;
+    position: absolute;
+    top: 24vh;
+    left: 59vw;
+}
+
+.special-item.star-specol {
+    background-image: url(../img/star-specol.png);
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 10vh;
+    left: 8vw;
+}
+
+.special-item.drawer {
+    background-image: url(../img/drawer.png);
+    height: 59px;
+    width: 220px;
+    position: absolute;
+    top: 91vh;
+    left: 32.3vw;
+}
+
+.special-item.opendrawer {
+    background-image: url(../img/opendrawer.png);
+    height: 49px;
+    width: 255px;
+    position: absolute;
+    top: 91.5vh;
+    left: 29.5vw;
+}
+
+.special-item.note {
+    background-image: url(../img/note.png);
+    height: 29px;
+    width: 66px;
+    position: absolute;
+    top: 91.2vh;
+    left: 40vw;
+}
+
+.special-item.red-button {
+    background-image: url(../img/red-button.png);
+    height: 15px;
+    width: 10px;
+    position: absolute;
+    top: 20vh;
+    left: 15.5vw;
+}
+
+.special-item.green-button {
+    background-image: url(../img/green-button.png);
+    height: 15px;
+    width: 10px;
+    position: absolute;
+    top: 20vh;
+    left: 15.5vw;
+}
+
+.special-item.LCC {
+    background-image: url(../img/LCC.png);
+    height: 80px;
+    width: 47px;
+    position: absolute;
+    top: 18vh;
+    left: 14vw;
+}
+
+/*special-item end*/
+
+
+/*提示*/
+.img-wrapper.Note {
+    background-image: url(../img/提示.png);
+    height: 40vh;
+}
+
+/* footer*/
+footer.footer.navbar-fixed-bottom {
+    background-color: #342b38;
+    color: white;
+}

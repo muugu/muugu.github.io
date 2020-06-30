@@ -1,0 +1,32 @@
+button.btn.btn-outline-light {
+    border-radius: 10px;
+    font-family: 微軟正黑體;
+    font-size: x-large;
+    font-weight: bolder;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-left: 47vw;
+    margin-top: 80vh;
+}
+
+body {
+    background-image: url(../img/cover.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.container {
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    max-width: none;
+}
+
+/* footer*/
+footer.footer.navbar-fixed-bottom {
+    background-color: #342b38;
+    color: white;
+}
