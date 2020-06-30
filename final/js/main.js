@@ -224,6 +224,7 @@ $(() => {
 
 
     /*倒數計時*/
+    $(".fail-page").hide();
     $(".btn.btn-outline-warning").click(function () {
         $(".introduction-modal.fourth").hide();
         $(".introduction-modal-cover-dark-version").hide();
@@ -232,7 +233,7 @@ $(() => {
         var spentTime = 0;
         ! function MyCounter() {
             if (time <= 0) {
-                window.open("./fail.html");
+                $(".fail-page").show();
             } else {
                 $(".countdown").text("Countdown: " + (time / 1000) + " sec");
                 setTimeout(MyCounter, 1000);
