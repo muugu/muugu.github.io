@@ -1,6 +1,8 @@
 $(() => {
     /**辨識用變數，判斷是否先看過note */
     var Count = 0;
+    /**辨識用變數，避免燈下星星重複出現*/
+    var lightCount = 0;
     /*收起彈出頁面*/
     $(".close").click(function () {
         $(".introduction-modal-cover ").hide();
@@ -145,12 +147,14 @@ $(() => {
             top: "10vh"
         }, "slow");
     })
+
     $(".special-item.light-bottom").mouseup(function () {
         $(".special-item.light-bottom").animate({
             top: "8vh"
         }, "slow");
-        if (Count == 1) {
+        if (Count == 1 && lightCount == 0) {
             $(".star-light").show(2000);
+            lightCount++;
         }
     })
 
@@ -229,7 +233,7 @@ $(() => {
         $(".introduction-modal.fourth").hide();
         $(".introduction-modal-cover-dark-version").hide();
         $(".countdown").show();
-        var time = 300000; //倒數5min
+        var time = 420000; //倒數7min
         var spentTime = 0;
         ! function MyCounter() {
             if (time <= 0) {
