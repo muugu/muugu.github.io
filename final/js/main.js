@@ -123,7 +123,7 @@ $(() => {
     $(".special-item.LCC").click(function () {
         if (Count == 1) {
             $(".special-item.LCC").animate({
-                top: "25vh"
+                top: "25%"
             }, "slow");
         }
     })
