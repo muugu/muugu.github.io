@@ -189,10 +189,10 @@ button.btn.btn-outline-warning {
 /*倒數*/
 .countdown {
     width: 15vw;
-    height: 8vh;
+    height: auto;
     position: absolute;
-    top: 1vh;
-    left: 83vw;
+    top: 1%;
+    left: 83%;
     padding: 2vh;
     background-color: white;
     border-radius: 5vh;
@@ -211,10 +211,10 @@ button.btn.btn-outline-warning {
 /*算星星數*/
 .starCollect {
     width: 10vw;
-    height: 8vh;
+    height: auto;
     position: absolute;
-    top: 88vh;
-    left: 1vw;
+    top: 88%;
+    left: 1%;
     padding: 2vh;
     background-color: #ffffff;
     border-radius: 5vh;
@@ -285,76 +285,77 @@ button.btn.btn-outline-light {
 
 .bulb.bulb1 {
     background-image: url(../img/bulb1.png);
-    top: 1.3vh;
-    left: 47vw;
+    top: 1.3%;
+    left: 47%;
+    /* position: absolute; */
 }
 
 .bulb.bulb2 {
     background-image: url(../img/bulb2.png);
-    top: -1vh;
-    left: 48.8vw;
+    top: -1%;
+    left: 49.5%;
     height: 35px;
     width: 35px;
 }
 
 .bulb.bulb3 {
     background-image: url(../img/bulb3.png);
-    top: -1vh;
-    left: 52vw;
+    top: -1%;
+    left: 53%;
 }
 
 .bulb.bulb4 {
     background-image: url(../img/bulb4.png);
-    top: -1.3vh;
-    left: 54vw;
+    top: -1.3%;
+    left: 56%;
 }
 
 .bulb.bulb5 {
     background-image: url(../img/bulb5.png);
-    top: -0.7vh;
-    left: 56.3vw;
+    top: -0.7%;
+    left: 58%;
 }
 
 .bulb.bulb6 {
     background-image: url(../img/bulb6.png);
-    top: 0.3vh;
-    left: 59vw;
+    top: 0.3%;
+    left: 60%;
 }
 
 .bulb.bulb7 {
     background-image: url(../img/bulb7.png);
-    top: 3.5vh;
-    left: 61vw;
+    top: 3.5%;
+    left: 62%;
 }
 
 .bulb.bulb8 {
     background-image: url(../img/bulb8.png);
-    top: 5.3vh;
-    left: 59vw;
+    top: 5.3%;
+    left: 60%;
 }
 
 .bulb.bulb9 {
     background-image: url(../img/bulb9.png);
-    top: 7.1vh;
-    left: 56.5vw;
+    top: 7.1%;
+    left: 57.5%;
 }
 
 .bulb.bulb10 {
     background-image: url(../img/bulb10.png);
-    top: 7.6vh;
-    left: 52.2vw;
+    top: 7.6%;
+    left: 52.2%;
 }
 
 .bulb.bulb11 {
     background-image: url(../img/bulb11.png);
-    top: 5.6vh;
-    left: 49.8vw;
+    top: 5.6%;
+    left: 50%;
 }
 
 .bulb.bulb12 {
     background-image: url(../img/bulb12.png);
-    top: 5vh;
-    left: 48.5vw;
+    top: 5%;
+    left: 49%;
 }
 
 /*圖書館介紹modal*/
@@ -442,11 +443,12 @@ p.content {
 
 /*special item的按鈕*/
 .special-item-wrapper {
-    height: 100%;
-    width: 100%;
+    height: 578px;
+    width: 1263px;
     background-image: url(../img/main.jpg);
     background-size: cover;
     background-position: center center;
+    position: relative;
 }
 
 .special-item {
@@ -461,8 +463,8 @@ p.content {
     height: 34px;
     width: 26px;
     position: absolute;
-    top: 8vh;
-    left: 54.2vw;
+    top: 8%;
+    left: 55%;
 }
 
 .special-item.poster {
@@ -470,25 +472,26 @@ p.content {
     width: 45px;
     height: 15vh;
     position: absolute;
-    top: 27vh;
-    left: 34.6vw;
+    top: 27%;
+    left: 35%;
 }
 
 .special-item.door {
-    width: 87px;
+    width: 90px;
     height: 111px;
     background-image: url(../img/door.png);
     position: absolute;
-    top: 27vh;
-    left: 52vw;
+    top: 26.9%;
+    left: 52.5%;
 }
 
 .special-item.door-open {
-    width: 87px;
+    width: 90px;
     height: 111px;
+    background-image: url(../img/door.png);
     position: absolute;
-    top: 27vh;
-    left: 52vw;
+    top: 26.9%;
+    left: 52.5%;
 }
 
 .special-item.spe-col {
@@ -496,8 +499,8 @@ p.content {
     width: 350px;
     height: 108px;
     position: absolute;
-    top: 49.3vh;
-    left: 42.5vw;
+    top: 49.5%;
+    left: 42.5%;
 }
 
 .special-item.return {
@@ -505,8 +508,8 @@ p.content {
     position: absolute;
     width: 40px;
     height: 101px;
-    top: 44.3vh;
-    left: 66.23vw;
+    top: 45.2%;
+    left: 67.2%;
 }
 
 .special-item.return-book {
@@ -523,8 +526,8 @@ p.content {
     width: 90px;
     height: 30px;
     position: absolute;
-    top: 40vh;
-    left: 46vw;
+    top: 40%;
+    left: 46%;
 }
 
 .special-item.computer {
@@ -532,8 +535,8 @@ p.content {
     width: 190px;
     height: 190px;
     position: absolute;
-    top: 69.8vh;
-    left: 82vw;
+    top: 69.8%;
+    left: 83.1%;
 }
 
 .special-item.doc {
@@ -541,8 +544,8 @@ p.content {
     width: 180px;
     height: 69px;
     position: absolute;
-    top: 71vh;
-    left: 73vw;
+    top: 71%;
+    left: 73%;
 }
 
 .special-item.hidebutton {
@@ -550,8 +553,8 @@ p.content {
     width: 100px;
     height: 50px;
     position: absolute;
-    top: 72vh;
-    left: 75vw;
+    top: 73%;
+    left: 75%;
 }
 
 .special-item.reference-desk-hide {
@@ -559,8 +562,8 @@ p.content {
     width: 120px;
     height: 40px;
     position: absolute;
-    top: 67vh;
-    left: 68vw;
+    top: 67%;
+    left: 69%;
 }
 
 .special-item.reference-desk {
@@ -568,8 +571,8 @@ p.content {
     width: 120px;
     height: 40px;
     position: absolute;
-    top: 67vh;
-    left: 68vw;
+    top: 67%;
+    left: 69%;
 }
 
 .special-item.gazetteer {
@@ -577,8 +580,8 @@ p.content {
     height: 80px;
     width: 109px;
     position: absolute;
-    top: 71vh;
-    left: 53vw;
+    top: 71%;
+    left: 53%;
 }
 
 .special-item.book1 {
@@ -586,8 +589,8 @@ p.content {
     width: 18px;
     height: 30px;
     position: absolute;
-    top: 45vh;
-    left: 29.5vw;
+    top: 45%;
+    left: 29.9%;
 }
 
 .special-item.book2 {
@@ -595,8 +598,8 @@ p.content {
     height: 110px;
     width: 80px;
     position: absolute;
-    left: 3.5vw;
-    top: -1vh;
+    left: 3.5%;
+    top: -1%;
 }
 
 .special-item.maps {
@@ -604,16 +607,16 @@ p.content {
     height: 70px;
     width: 65px;
     position: absolute;
-    top: 23vh;
-    left: 90vw;
+    top: 23%;
+    left: 91.2%;
 }
 
 .special-item.star-computer {
     width: 30px;
     height: 30px;
     position: absolute;
-    top: 85vh;
-    left: 91vw;
+    top: 85.5%;
+    left: 92.5%;
     background-image: url(../img/star-computer.png);
 }
 
@@ -621,8 +624,8 @@ p.content {
     height: 103px;
     width: 83px;
     position: absolute;
-    top: 74.6vh;
-    left: 88.3vw;
+    top: 74.6%;
+    left: 89.43%;
     background-image: url(../img/computer-dark.png);
     background-repeat: no-repeat;
 }
@@ -632,8 +635,8 @@ p.content {
     height: 20px;
     width: 32px;
     position: absolute;
-    top: 70vh;
-    left: 69.5vw;
+    top: 70%;
+    left: 70%;
 }
 
 .special-item.star-journal {
@@ -642,8 +645,8 @@ p.content {
     height: 24px;
     width: 0.5px;
     position: absolute;
-    top: 46vh;
-    left: 29.7vw;
+    top: 46%;
+    left: 30.2%;
 }
 
 .special-item.star-reference {
@@ -651,8 +654,8 @@ p.content {
     height: 35px;
     width: 30px;
     position: absolute;
-    top: 7vh;
-    left: 4vw;
+    top: 7%;
+    left: 3.5%;
 }
 
 .special-item.star-borrow {
@@ -660,8 +663,8 @@ p.content {
     height: 25px;
     width: 10px;
     position: absolute;
-    top: 71vh;
-    left: 4.2vw;
+    top: 71%;
+    left: 4.2%;
 }
 
 .special-item.book3 {
@@ -669,8 +672,8 @@ p.content {
     height: 69px;
     width: 45px;
     position: absolute;
-    top: 65.8vh;
-    left: 3.6vw;
+    top: 65.8%;
+    left: 3.7%;
 }
 
 .special-item.book4 {
@@ -678,7 +681,7 @@ p.content {
     height: 100px;
     width: 120px;
     position: absolute;
-    top: 23.9vh;
+    top: 23.9%;
 }
 
 .special-item.star-return {
@@ -686,8 +689,8 @@ p.content {
     height: 22px;
     width: 20px;
     position: absolute;
-    top: 25vh;
-    left: 2.6vw;
+    top: 25%;
+    left: 3%;
 }
 
 .special-item.star-map {
@@ -695,8 +698,8 @@ p.content {
     height: 26px;
     width: 24px;
     position: absolute;
-    top: 23.5vh;
-    left: 91.5vw;
+    top: 23%;
+    left: 92%;
 }
 
 .special-item.star-light {
@@ -704,8 +707,8 @@ p.content {
     height: 20px;
     width: 20px;
     position: absolute;
-    top: 14vh;
-    left: 54.7vw;
+    top: 14%;
+    left: 55.5%;
 }
 
 .special-item.star-window {
@@ -713,8 +716,8 @@ p.content {
     height: 20px;
     width: 20px;
     position: absolute;
-    top: 9.5vh;
-    left: 50vw;
+    top: 9.5%;
+    left: 51%;
 }
 
 .special-item.star-shelf {
@@ -722,8 +725,8 @@ p.content {
     height: 10px;
     width: 20px;
     position: absolute;
-    top: 71.8vh;
-    left: 30vw;
+    top: 71.8%;
+    left: 30%;
 }
 
 .special-item.star-wall {
@@ -731,8 +734,8 @@ p.content {
     height: 13px;
     width: 10px;
     position: absolute;
-    top: 24vh;
-    left: 59vw;
+    top: 24%;
+    left: 60%;
 }
 
 .special-item.star-specol {
@@ -746,11 +749,11 @@ p.content {
 
 .special-item.drawer {
     background-image: url(../img/drawer.png);
-    height: 59px;
+    height: 52px;
     width: 220px;
     position: absolute;
-    top: 91vh;
-    left: 32.3vw;
+    top: 91%;
+    left: 32.8%;
 }
 
 .special-item.opendrawer {
@@ -758,8 +761,8 @@ p.content {
     height: 49px;
     width: 255px;
     position: absolute;
-    top: 91.5vh;
-    left: 29.5vw;
+    top: 91.9%;
+    left: 30%;
 }
 
 .special-item.note {
@@ -767,8 +770,8 @@ p.content {
     height: 29px;
     width: 66px;
     position: absolute;
-    top: 91.2vh;
-    left: 40vw;
+    top: 91.2%;
+    left: 40%;
 }
 
 .special-item.red-button {
@@ -776,8 +779,8 @@ p.content {
     height: 15px;
     width: 10px;
     position: absolute;
-    top: 20vh;
-    left: 15.5vw;
+    top: 20%;
+    left: 15.8%;
 }
 
 .special-item.green-button {
@@ -785,8 +788,8 @@ p.content {
     height: 15px;
     width: 10px;
     position: absolute;
-    top: 20vh;
-    left: 15.5vw;
+    top: 20%;
+    left: 15.8%;
 }
 
 .special-item.LCC {
@@ -794,8 +797,8 @@ p.content {
     height: 80px;
     width: 47px;
     position: absolute;
-    top: 18vh;
-    left: 14vw;
+    top: 18%;
+    left: 14%;
 }
 
 /*special-item end*/
@@ -805,6 +808,28 @@ p.content {
 .img-wrapper.Note {
     background-image: url(../img/提示.png);
     height: 40vh;
+}
+
+/*失敗頁面*/
+.fail-page {
+    background-image: url(../img/fail.jpg);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0vh;
+    background-size: cover;
+    background-position: center center;
+}
+
+button.btn.btn-outline-light {
+    border-radius: 10px;
+    font-family: 微軟正黑體;
+    font-size: x-large;
+    font-weight: bolder;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-left: 47vw;
+    margin-top: 80vh;
 }
 
 /* footer*/
