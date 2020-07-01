@@ -131,26 +131,26 @@ $(() => {
     $(".special-item.red-button").click(function () {
         $(".special-item.red-button").hide();
         $(".special-item.maps").animate({
-            top: "25vh"
+            top: "25%"
         }, "slow");
     })
 
     $(".special-item.green-button").click(function () {
         $(".special-item.red-button").show();
         $(".special-item.maps").animate({
-            top: "23vh"
+            top: "18%"
         }, "slow");
     })
 
     $(".special-item.light-bottom").mousedown(function () {
         $(".special-item.light-bottom").animate({
-            top: "10vh"
+            top: "10%"
         }, "slow");
     })
 
     $(".special-item.light-bottom").mouseup(function () {
         $(".special-item.light-bottom").animate({
-            top: "8vh"
+            top: "8%"
         }, "slow");
         if (Count == 1 && lightCount == 0) {
             $(".star-light").show(2000);
